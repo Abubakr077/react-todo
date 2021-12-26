@@ -22,6 +22,22 @@
 .App-link {
   color: #61dafb;
 }
+.wrapper {
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+}
+
+.main-nav {
+  float: initial;
+}
+
+.main-nav li {
+  display: inline-block;
+  width: 25%;
+}
 
 @keyframes App-logo-spin {
   from {
