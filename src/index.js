@@ -6,8 +6,27 @@ import * as serviceWorker from './serviceWorker';
 import AppReducer from "./reducers/appReducers";
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-
-const store = createStore(AppReducer);
+let initialData = {data: [
+        {
+            "id": 1,
+            "title": "Sample task 1",
+            "description": "Some description 1",
+            "createdAt": new Date(),
+        },
+        {
+            "id": 2,
+            "title": "Sample task 2",
+            "description": "Some description 2",
+            "createdAt": new Date(),
+        },
+        {
+            "id": 3,
+            "title": "Sample task 3",
+            "description": "Some description 3",
+            "createdAt": new Date(),
+        }
+    ]}
+const store = createStore(AppReducer,initialData);
 ReactDOM.render(
     <Provider store={store}>
         <App />

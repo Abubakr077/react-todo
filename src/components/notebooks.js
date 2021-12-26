@@ -16,32 +16,8 @@ class Notebooks extends Component {
                 {title: 'Description', field: 'description'},
                 {title: 'Created At', field: 'createdAt',type: 'date'},
             ],
-            data: []
+            data: this.props.data
         };
-    }
-
-    componentDidMount() {
-        /////initialize store///
-        this.updateNoteBooks([
-            {
-                "id": 1,
-                "title": "Sample task 1",
-                "description": "Some description 1",
-                "createdAt": new Date(),
-            },
-            {
-                "id": 2,
-                "title": "Sample task 2",
-                "description": "Some description 2",
-                "createdAt": new Date(),
-            },
-            {
-                "id": 3,
-                "title": "Sample task 3",
-                "description": "Some description 3",
-                "createdAt": new Date(),
-            }
-        ])
     }
 
     updateNoteBooks(data) {
