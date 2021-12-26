@@ -163,7 +163,7 @@ class NotebookDetails extends Component {
                                         Created At
                                     </Typography>
                                     <Typography className={classes.pos} color="textSecondary">
-                                        {noteBook.createdAt}
+                                        {String(noteBook.createdAt)}
                                     </Typography>
                                 </li>
                             </ul>
